@@ -1,21 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Weather from "./Weather";
+import "./App.css";
+import { BallTriangle } from "react-loader-spinner";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <h1>Hello world</h1>
+        <BallTriangle
+          height={70}
+          width={70}
+          radius={3}
+          color="#8865F1"
+          ariaLabel="ball-triangle-loading"
+          wrapperClass={{}}
+          wrapperStyle=""
+          visible={true}
+        />
+        <Weather city="New York" />
+        <a href="https://www.shecodes.io/" target="_blank" rel="noreferrer">
+          SheCodes
         </a>
       </header>
     </div>
