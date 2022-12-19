@@ -10,8 +10,8 @@ function App() {
         <h1>Hello world</h1>
         <BallTriangle
           height={70}
-          width={70}
-          radius={3}
+          width={80}
+          radius={5}
           color="#8865F1"
           ariaLabel="ball-triangle-loading"
           wrapperClass={{}}
